@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* lo que hace este cod es contemplar las relaciones hasta el borde*/
+
+}
+ 
+main {
+    background-color: aqua;
+    font-size: 25px;
+}

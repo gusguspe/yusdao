@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="showCalculator()">Abre calculadora</button>
+
+    <script>
+        function showCalculator() {
+            // Solicitar la operación y los números al usuario
+            const operation = prompt("Ingresa la operación (suma, resta, multiplicación,división ):Ejemplo: 2+4");
+
+            if (!operation) return; // Si el usuario cancela o no ingresa nada, salimos
+
+            // Evaluar la expresión matemática ingresada por el usuario
+            try {
+                const result = eval(operation);
+                alert(`Result: ${result}`);
+            } catch (error) {
+                alert("Invalid input or operation!");
+            }
+        }
+    </script>
+
+    </div>
+    <script src="./math.js"></script>
+    <script src="./calculator.js"></script>
+
+
+
+
+    
+</body>
+</html>
